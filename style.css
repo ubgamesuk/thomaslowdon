@@ -1,4 +1,3 @@
-/* ----- POPPINS FONT Link ----- */
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap');
 
 /* ----- VARIABLES ----- */
@@ -91,16 +90,16 @@ nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 90px;
+    height: 80px;
+    backdrop-filter: blur(15px);
     line-height: 100px;
-    background: rgba(200, 200, 200, 0.854);
     padding-inline: 9vw;
     transition: .3s;
     z-index: 100;
 }
 .nav-logo{
    position: relative;
-   transform: translateY(10px);
+   transform: translateY(5px) translateX(25px);
 }
 .nav-name{
     font-size: 30px;
@@ -115,17 +114,8 @@ nav{
     list-style: none;
     position: relative;
 }
-.nav-link{
-    position: relative;
-    text-decoration: none;
-    color: #5d5d5d;
-    font-weight: 400;
-    font-size: 20px;
-    margin-inline: 15px;
-    
-}
 .nav-menu-btn{
-    display: none;
+    visibility: hidden;
 }
 .nav-menu-btn i{
     font-size: 28px;
@@ -160,7 +150,7 @@ nav{
     align-content: center;
     min-height: 80vh;
     flex-direction: column;
-    width: 50%;
+    width: 585px;
     padding-left: 20px;
 }
 .featured-text-card span{
@@ -179,6 +169,8 @@ nav{
 }
 .featured-name b{
     font-weight: 500;
+    font-size: 50px;
+
 }
 .typedText{
     color: #343434;
@@ -288,7 +280,7 @@ nav{
 .top-header h1{
     font-weight: 500;
     font-size: 30px;
-    color: #ccc;
+    color: #323232;
     margin-bottom: 5px;
     font-style: normal;
     
@@ -309,11 +301,10 @@ h3{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-block: 30px 70px;
+    padding-block: 30px 30px;
     padding-inline: 20px;
     width: 100%;
     background: var(--color-white);
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     border-radius: 20px;
 }
 .about-info p{
@@ -340,17 +331,23 @@ h3{
 .skills-header{
     margin-bottom: 30px;
 }
-.skills-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+.skills-header .website{
+    display: grid;
 }
-.skills-list span{
-    font-size: 14px;
-    background: var(--first-color);
-    color: var(--color-white);
-    padding: 2px 10px;
-    border-radius: 5px;
+.skills-header .website .site-link{
+    padding: 20px;
+    width: 400px;
+    height: 100px;
+    text-align: left;
+    font-size: 28px;
+    border: none;
+    border-radius: 15px;
+    background-color: #00000018;
+    transition: 0.5s ease;
+}
+.skills-header .website .site-link:hover{
+    background-color: #0000000c;
+    cursor: pointer;
 }
 
 /* ----- PROJECTS BOX ----- */
@@ -371,37 +368,22 @@ h3{
     height: 250px;
     background: #ffffff;
     border-radius: 20px;
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
 }
-.project-box>i{
-    font-size: 50px;
-    color: #00B5E7;
-    margin-bottom: 25px;
-}
-.project-box label{
+.project-box button{
     font-size: 25px;
-    color: #d4d4d4;
-    font-style: normal;
+    width: 190px;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.2s ease;
 }
-.project-box::after, .contact-info::after{
-    content: "";
-    position: absolute;
-    bottom: -100%;
-    width: 100%;
-    height: 100%;
-    transition: .4s;
-    z-index: 1;
+.project-box .ubfamily{
+    font-size: 20px;
 }
-.project-box:hover.project-box::after,
-.contact-info:hover.contact-info::after{
-    bottom: 0;
-}
-.project-box:hover.project-box i,
-.project-box:hover.project-box>h3,
-.project-box:hover.project-box>label{
-    color: var(--color-white);
-    z-index: 2;
+.project-box button:hover{
+    background-color: #00000028;
+    cursor: pointer;
 }
 
 /* ----- CONTACT BOX ----- */
@@ -499,16 +481,16 @@ footer{
     background: #F8F8F8;
     padding-block: 40px 60px;
 }
-footer p{
-    font-size: 20px;
-    font-weight: 400;
+.top-footer p{
+    font-size: 25px;
+    font-weight: 600;
 }
-footer h2{
-    font-weight: 500;
+footer .email{
+    font-size: 20px;
 }
 footer i{
-    transform: translateY(5px);
-    font-size: 23px;
+    transform: translateY(4px);
+    font-size: 24px;
 }
 .middle-footer .footer-menu{
     display: flex;
