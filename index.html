@@ -15,8 +15,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-
     <link rel="stylesheet" href="style.css">
+
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     
@@ -26,29 +26,11 @@
 </head>
 <body>
    <div class="container">
-    <!-- --------------- HEADER --------------- -->
+
       <nav id="header">
         <div class="nav-logo">
             <img src="images/logo-black.png"
                 width="250">
-        </div>
-        <div class="nav-menu" id="myNavMenu">
-            <ul class="nav_menu_list">
-                <li class="nav_list">
-                    <a href="#home" class="nav-link">Home</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#about" class="nav-link">Games</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#projects" class="nav-link">Websites</a>
-                    <div class="circle"></div>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-button">
         </div>
         <div class="nav-menu-btn">
             <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -56,26 +38,23 @@
       </nav>
 
 
-    <!-- -------------- MAIN ---------------- -->
     <main class="wrapper">
-       <!-- -------------- FEATURED BOX ---------------- -->
+
        <section class="featured-box" id="home">
           <div class="featured-text">
             <div class="featured-text-card">
 
             </div>
             <div class="featured-name">
-                <p>Over <b>1.5 million</b> combined views over all websites.</p>
+                <p>Over <b>1.5 million</b> combined views across all websites.</p>
             </div>
             <div class="featured-text-info">
                 <p>Since launch in October 2023, we have reached over <b>1,500,000</b> views on ubgames, ubmini and ubtv combined.</p>
             </div>
             <div class="featured-text-btn">
-                <a href="#projects">
-                    <button class="btn">Our websites</button>
-
                 <a href="#about">
-                    <button class="btn">More info<i class="uil uil-angle-right-b"></i></button>
+                    <button class="btn">Learn more<i class="uil uil-angle-right-b"></i></button>
+                </a>
             </div>
             <div class="social_icons">
             </div>
@@ -89,21 +68,81 @@
           </div>
 
        </section>
+       <section class="section" id="about">
+          <div class="top-header">
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <p>In September 2022, I created a game website called ubgames. I released it to the world in October 2023 and it has kept growing ever since. We currently have over 200 games available to play for free, and nearly 100,000 active users.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
 
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                            <div class="website">
+                                <img src="images/ubgames-logo-black.png"
+                                height="60px">
+                                <br>
+                                <a href="https://www.ubgames.uk/all-games">
+                                    <button class="site-link">Visit ubgames.uk</button>
+                                </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+       </section>
 
-    <!-- --------------- FOOTER --------------- -->
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Other websites</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <img class="website-logo" src="images/ubmini-black.png"
+                height="60px">
+                <br>
+                <a href="https://www.ubmini.com">
+                    <button>ubmini.com</button>
+                </a>
+            </div>
+            <div class="project-box">
+                <img class="website-logo" src="images/ubtvwhite.png"
+                height="60px">
+                <br>
+                <a href="https://tv.ubmini.com">
+                    <button>tv.ubmini.com</button>
+                </a>
+            </div>
+            <div class="project-box">
+                <img class="website-logo" src="images/ubfamilyblack.png"
+                height="40px">
+                <br>
+                <a href="https://family.ubgames.uk">
+                    <button class="ubfamily">family.ubgames.uk</button>
+                </a>
+            </div>
+          </div>
+       </section>
+    </main>
+
     <footer>
         <div class="top-footer">
             <img src="images/logo-black.png"
             height="40px">
         </div>
-        <p><i class='bx bxs-envelope'></i>  contact@thomaslowdon.com</p>
+        <p class="email"><i class='bx bxs-envelope'></i>  contact@thomaslowdon.com</p>
             <p>&copy;2024 Thomas Lowdon</p>
-            <h2>Full website coming soon!</h2>
         </div>
     </footer>
 
     </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
 </body>
 </html>
